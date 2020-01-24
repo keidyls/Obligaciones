@@ -11,9 +11,6 @@ use Illuminate\Routing\Route;
 |
 */
 
-Route::any('/', function () {
-    //
-});
     Route::get('/','InicioController@index')->name('inicio');
     Route::get('seguridad/Loging','Seguridad\LoginController@index')->name('login');
     Route::post('Seguridad/Loging','Seguridad\LogingController@index')->name('login_post');
